@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:img_left = "@drawable/backicon"
+        app:text_title="心电图"
+        app:img_right="@mipmap/ic_operation"
+        >
+
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_openECGLarge"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true">
+
+            <com.datalife.datalife.widget.EcgBackgroundView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <com.datalife.datalife.widget.EcgBackgroundView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.datalife.datalife.widget.EcgWaveView
+                android:id="@+id/ecg_draw_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:waveColor="#ca0fae"
+                app:waveStrokeWidth="2dp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_starttest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_70"
+                android:background="@mipmap/ic_ecg_start"
+                android:text="@string/start" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_wave"
+                android:layout_alignParentBottom="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:text="@string/rr_max_value"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_rrMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:text="@string/hr_value"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ecg_hr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:text="@string/rr_min_value"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_rrMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:text="@string/hrv_value"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ecg_hrv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="@dimen/margin_14"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/mood_value"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ecg_mood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:text="@string/br_value"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ecg_br"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_opration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@mipmap/ic_ecg_operation"/>
+
+</RelativeLayout>
+
+    <!--</layout>-->

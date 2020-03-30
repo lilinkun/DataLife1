@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/headtop_styles"
+    >
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_head_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/backicon"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_headtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_headtop"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/iv_head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_10"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/margin_head_small"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/ic_ble_connect"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_20"/>
+    </RelativeLayout>
+</RelativeLayout>
+

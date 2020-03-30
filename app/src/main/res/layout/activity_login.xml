@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+`
+
+        <com.datalife.datalife.widget.RoundImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/girl"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/iv_user_head"
+                style="@style/editor_left_drawable"
+                android:src="@mipmap/ic_user"/>
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_login_name"
+                android:layout_toRightOf="@+id/iv_user_head"
+                style="@style/editor_text_style"
+                android:padding="@dimen/padding_10"
+                android:inputType="textEmailAddress"
+                android:layout_centerVertical="true"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+            <View
+                style="@style/horizontal_line_divider"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <ImageView
+                    android:id="@+id/iv_psd_head"
+                    style="@style/editor_left_drawable"
+                    android:src="@mipmap/ic_password"/>
+
+                <EditText
+                    android:id="@+id/et_psd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_psd_name"
+                    android:layout_toRightOf="@+id/iv_psd_head"
+                    style="@style/editor_text_style"
+                    android:padding="@dimen/padding_10"
+                    android:password="true"
+                    android:inputType="textPassword"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+            <View
+                style="@style/horizontal_line_divider"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_head_middle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vcode"/>
+
+            <EditText
+                android:id="@+id/et_vcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:paddingLeft="@dimen/padding_small"
+                android:background="@mipmap/ic_vcode"/>
+
+            <ImageView
+                android:id="@+id/ic_vcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"/>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_head_large"
+            >
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/register_user"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/forget_password"/>
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="134px"
+            android:layout_marginRight="134px"
+            android:textSize="@dimen/text_size_14.4"
+            android:background="@mipmap/ic_login"
+            android:textColor="@color/white"
+            android:text="@string/login" />
+
+    </LinearLayout>
+</ScrollView>

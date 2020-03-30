@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--register-->
+    <dimen name="register_height">60dp</dimen>
+    <dimen name="edittext_margintop">10sp</dimen>
+
+    <!--me-->
+    <dimen name="me_layout_height">60dp</dimen>
+    <dimen name="me_interval">10dp</dimen>
+    <dimen name="me_vip_height">60dp</dimen>
+    <dimen name="me_report_height">80dp</dimen>
+
+
+    <!-- headtop-->
+    <dimen name="margin_head_little">5dp</dimen>
+    <dimen name="margin_head_small">10dp</dimen>
+    <dimen name="margin_head_middle">15dp</dimen>
+    <dimen name="margin_head_large">20dp</dimen>
+    <dimen name="margin_little">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_middle">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="text_size_headtop">20sp</dimen>
+    <dimen name="text_size_headright">18sp</dimen>
+    <dimen name="custom_titlebar_height">60dp</dimen>
+
+    <!--TEXTSIZE-->
+    <dimen name="text_size">12.5sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14.4">14.4dip</dimen>
+    <dimen name="title_txt_fount">18sp</dimen>
+
+    <!--nav-->
+    <dimen name="nav_image_size">72dp</dimen>
+    <dimen name="nav_image_userface">33dp</dimen>
+
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+
+
+
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+
+
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_33">33dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_11">11dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_center">15dp</dimen>
+    <dimen name="padding_large">18dp</dimen>
+    <dimen name="padding_big">20dp</dimen>
+    <dimen name="padding_25">25dp</dimen>
+    <dimen name="padding_large_big">30dp</dimen>
+    <dimen name="padding_38">38dp</dimen>
+
+    <!--line-->
+    <dimen name="line_height">0.5dp</dimen>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_vip_height"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/ic_protocol_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_protocol"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_usage_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+</LinearLayout>

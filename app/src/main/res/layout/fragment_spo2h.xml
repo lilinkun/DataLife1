@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:img_right="@mipmap/ic_operation"
+        app:text_title="@string/spo2h_value">
+
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.datalife.datalife.widget.OxWaveView
+            android:id="@+id/oxWave"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="@dimen/margin_30"
+            app:waveStrokeWidth="2dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_round"
+            android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/ic_heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_heartrate"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/spo2h_value"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="140dp"
+            android:layout_height="10dp"
+            android:max="160"
+            android:visibility="gone"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@mipmap/ic_bpdata_line"
+            android:secondaryProgress="@null" />
+        <TextView
+            android:id="@+id/tv_spo2h_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_little"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_starttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/ic_ecg_start"
+            android:text="@string/start" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_wave"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spo2h_value"
+                android:textSize="@dimen/text_size_20" />
+            <TextView
+                android:id="@+id/tv_spo2h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_spo2h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@mipmap/ic_spo2h_operation"/>
+
+</RelativeLayout>
+

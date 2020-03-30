@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">百年中堂</string>
+
+    <string name="apptab_me">我</string>
+    <string name="apptab_homepage">首页</string>
+    <string name="apptab_health_home">健康之家</string>
+    <string name="apptab_shopping_mall">商城</string>
+
+
+    <string name="personal_files">个人档案</string>
+    <string name="health_report">健康报告</string>
+    <string name="ele_report">电子报告</string>
+
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="third_login">第三方登录</string>
+    <string name="hint_login_name">请输入用户名</string>
+    <string name="hint_psd_name">请输入密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="vcode">验证码</string>
+    <string name="input_vcode">请输入验证码</string>
+    <string name="toast_vcode_error">验证码错误</string>
+    <string name="account_is_null">账号不能为空</string>
+    <string name="psw_is_null">密码不能为空</string>
+
+    <!--健康监测仪-->
+    <string name="heartrate">血压</string>
+    <string name="oxygen">血氧</string>
+    <string name="temp">体温</string>
+    <string name="electrocardiogram">心电图</string>
+    <string name="start">开始</string>
+
+
+    <!--注册-->
+    <string name="register_over">完成注册</string>
+    <string name="register_user">新用户注册</string>
+    <string name="register">用户注册</string>
+    <string name="register_input_user">请输入用户名(3-15个字符)</string>
+    <string name="register_input_phone">手机号输入</string>
+    <string name="register_input_psd">请输入密码(6-12个字符)</string>
+    <string name="register_sure_psd">请确认密码(6-12个字符)</string>
+    <string name="register_vcode">获取验证码</string>
+    <string name="login_prompt">登录即表示你同意百年中堂</string>
+    <string name="user_usage_protocol">《用户使用协议》</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="prompt_login_name_not_empty">用户名不能为空，请输入用户名！</string>
+    <string name="prompt_login_name_not_allow">用户名必须3-15个字符</string>
+    <string name="prompt_login_passwrod_not_empty">密码不能为空，请输入密码！</string>
+    <string name="prompt_modify_old_passwrod_not_empty">密码不能为空，请输入密码！</string>
+    <string name="prompt_modify_new_passwrod_not_empty">密码不能为空，请输入密码！</string>
+    <string name="prompt_passwrod_not_allow">密码必须6-20个字符</string>
+    <string name="prompt_phone_number_invalid">输入的手机号码无效，请输入正确的手机号码！</string>
+    <string name="get_verification_code_error">获取验证码错误</string>
+    <string name="prompt_verification_code_not_empty">验证码不能为空，请输入正确验证码</string>
+    <string name="prompt_register_check_not_false">请同意</string>
+
+    <!--我的-->
+    <string name="shoppingcar_manager">购物车管理</string>
+    <string name="ordermanager">订单管理</string>
+    <string name="collectionmanager">收藏管理</string>
+    <string name="equipmanager">设备管理</string>
+    <string name="planmanager">计划管理</string>
+    <string name="systemsetting">系统管理</string>
+    <string name="my_vip">我的vip会员</string>
+    <string name="expiry_time">2018-8-8到期</string>
+
+    <!--个人信息-->
+    <string name="user_info">基本信息</string>
+    <string name="text_change_cancle">取消</string>
+    <string name="text_change_ok">完成</string>
+    <string name="text_Myinfo_day">日</string>
+    <string name="text_Myinfo_month">月</string>
+    <string name="text_Myinfo_years">年</string>
+    <string name="my_username">姓名:</string>
+    <string name="my_sex_nan">男</string>
+    <string name="my_sex_nv">女</string>
+    <string name="my_sex_ch">性别:</string>
+    <string name="my_select_ch">请选择</string>
+    <string name="my_add_hint">请输入用户名</string>
+    <string name="my_age_ch">年龄:</string>
+    <string name="my_height_ch"> 身高:</string>
+    <string name="my_weight_ch"> 体重:</string>
+    <string name="my_select2_ch">可选</string>
+    <string name="my_weight">体重</string>
+
+    <string name="analyze_project_9">基础代谢</string>
+
+    <!--设置-->
+    <string name="evaluate">评价</string>
+    <string name="feedback">意见反馈</string>
+    <string name="scavenging_caching">清除缓存</string>
+    <string name="about_app">关于百年中堂</string>
+    <string name="app_exit">退出登录</string>
+    <string name="update_app">版本更新</string>
+
+    <!--设备管理-->
+    <string name="connecting_equip">当前设备</string>
+    <string name="connected_equip">已配对的设备</string>
+    <string name="search_equip">搜索设备</string>
+    
+    
+    <!--头像-->
+    <string name="header">头像</string>
+    <string name="username">姓名</string>
+    <string name="user_sex">性别</string>
+    <string name="user_birthday">生日</string>
+    <string name="user_height">身高</string>
+    <string name="user_tel">绑定手机</string>
+    <string name="user_area">地区</string>
+    <string name="user_local">收货地址</string>
+
+    <!--nav-->
+    <string name="nav_usermanage">用户管理</string>
+
+    <!--添加新用户-->
+    <string name="add_user">添加家庭成员</string>
+    <string name="add_user_nickname">昵称</string>
+    <string name="add_user_weight">体重</string>
+    <string name="add_user_age">年龄</string>
+
+    <!--主页-->
+    <string name="health_testing">健康检测仪</string>
+    <string name="body_fat">体脂称</string>
+    <string name='instrument_testing'>仪器检测</string>
+    <string name="health_self_testing">健康自测</string>
+    <string name="health_info">健康资讯</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="testing_report">测试报告</string>
+    <string name="click_testing">点击测试</string>
+
+    <!--商城-->
+    <string name="mall_main">商城开发中...</string>
+
+    <!--健康之家-->
+    <string name="health_home">健康之家开发中...</string>
+
+    <!--health-->
+    <string name="btn_logout_text">若有用到测量数据同步，点此登录服务器</string>
+    <string name="btn_login_text">已登录，点击退出</string>
+    <string name="switch_login_hm">登录到健康检测仪</string>
+    <string name="switch_login_therm">登录到体温计</string>
+    <string name="sbp_value">舒张压</string>
+    <string name="dbp_value">收缩压</string>
+    <string name="bt">体温</string>
+    <string name="spo2h_value">血氧</string>
+    <string name="hr_value">心率</string>
+    <string name="ecg">心电</string>
+    <string name="bp">血压</string>
+    <string name="rr_max_value">RR最大值:</string>
+    <string name="rr_min_value">RR最小值:</string>
+    <string name="hrv_value">心率变异性</string>
+    <string name="mood_value">心情:</string>
+    <string name="br_value">呼吸率</string>
+    <string name="duration_value">测量持续时间: </string>
+    <string name="pager_speed_value">时间基准:</string>
+    <string name="calibration_value">增益:</string>
+    <string name="leak_and_check">存在漏气，请检查气路，重新测量。</string>
+    <string name="measurement_void">测量过程中请保持安静，此次测量作废，请重新测量。</string>
+    <string name="close">关闭</string>
+    <string name="testing">检测中</string>
+    <string name="temp_unit_f">℉</string>
+    <string name="temp_unit_c">℃</string>
+    <string name="ask_for_verify_code">请向管理员(%1$s)索取验证码：</string>
+    <string name="unconnect">未连接</string>
+    <string name="click_connect">点击连接</string>
+    <string name="connected">已连接</string>
+    <string name="connecting">连接中</string>
+    <string name="openble">打开蓝牙</string>
+    <string name="dbpandsdp">收缩压/舒张压</string>
+    <string name="history_record">历史纪录</string>
+    <string name="analyze_week_ch">周</string>
+    <string name="analyze_month_ch">月</string>
+    <string name="analyze_day_ch">日</string>
+    <string name="analyze_year_ch">年</string>
+
+    <!--yunchen-->
+    <string name="text_Low_text">Niedrig</string>
+    <string name="text_Standard_text">Standard</string>
+    <string name="text_High_text">Hoch</string>
+
+
+</resources>
